@@ -8,7 +8,7 @@ Open `Oversight.wdgt` from the Finder to install. OS X will move the file to `~/
 
 ## Collaboration
 
-When forking, it's best to change the bundle identifier to avoid preference conflicts. In `Info.plist`, change the `CFBundleIdentifier` and version keys to your own values.
+When maintaining a separate fork, it's best to change the bundle identifier to avoid preference conflicts. In `Info.plist`, change the `CFBundleIdentifier` and version keys to your own values.
 
 ## License
 
