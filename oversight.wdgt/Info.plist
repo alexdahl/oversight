@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowSystem</key>
+	<true/>
+	<key>CFBundleIdentifier</key>
+	<string>com.alexdahl.widget.oversight</string>
+	<key>CFBundleName</key>
+	<string>Oversight</string>
+	<key>CFBundleDisplayName</key>
+	<string>Oversight</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.1</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.1</string>
+	<key>CloseBoxInsetX</key>
+	<integer>10</integer>
+	<key>CloseBoxInsetY</key>
+	<integer>8</integer>
+	<key>CFBundleIconFile</key>
+	<string>Oversight.icns</string>
+	<key>MainHTML</key>
+	<string>Oversight.html</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.4.11</string>
+</dict>
+</plist>

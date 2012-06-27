@@ -1,0 +1,65 @@
+<!-- 
+Oversight 1.0.1
+Copyright 2008–2010 Alex Dahl
+
+This file is part of Oversight.
+
+Oversight is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+Oversight is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with Oversight.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Oversight</title>
+	<style type="text/css">
+	    @import "structure.css";
+	</style>
+	<script type="text/javascript" src="core.js"></script>
+	<script type="text/javascript" src="/System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+</head>
+ 
+<body onload="setup();">
+
+	<div id="front">
+		<img src="Default.png" alt="" />
+		<div id="uptime">&nbsp;</div>
+		<div id="tabs">
+			<div id="cpu" class="tabActive" onclick="switchTab(0)">CPU</div>
+			<div id="ram" class="tabInactive" onclick="switchTab(1)">RAM</div>
+		</div>
+		<div id="processList" class="list">&nbsp;</div>
+		<div id="dataList" class="list">&nbsp;</div>
+		<div id='infoButton'></div>
+	</div>
+	
+	<div id="back">
+		<img src="Images/Back.png" alt="" />
+		<div id="optionSpeed">
+			Update speed:
+			<select id="speedSelect">
+				<option value="1000">1 second</option>
+				<option value="2000">2 seconds</option>
+				<option value="3000">3 seconds</option>
+				<option value="5000">5 seconds</option>
+				<option value="10000">10 seconds</option>
+			</select>
+		</div>
+		<div id="optionUptime">
+			<input type="checkbox" id="uptimeCheckbox" /><label for="uptimeCheckbox">Show uptime</label>
+		</div>	
+		<div id="license" onclick='widget.system("/usr/bin/open license.html", null); widget.openURL("");'>License</div>
+		<div id="version">
+			Oversight 1.0.1
+		</div>
+		<div id="doneButton"></div>
+	</div>
+
+</body>
+</html>
