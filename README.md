@@ -12,4 +12,4 @@ When maintaining a separate fork, it's best to change the bundle identifier to a
 
 ## License
 
-Free to modify and redistribute under [GPLv3](http://www.gnu.org/licenses/gpl.html).
+Oversight is release under the [MIT License](http://www.opensource.org/licenses/MIT), which allows you to modify and redistribute this software freely.

@@ -1,118 +1,98 @@
-/*
-Oversight 1.0.1
-Copyright 2008–2010 Alex Dahl
-
-This file is part of Oversight.
-
-Oversight is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-Oversight is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with Oversight.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
 body {
-	margin: 0; }
+  margin: 0; }
     
     #front {
-		display: block;
-		width: 218px;
-		height: 138px;
-		font: 10px "Lucida Grande";
-		color: #000; }
-	
-		#uptime {
-			position: absolute;
-			top: 16px;
-			left: 19px;
-			color: #808080;
-			text-shadow: 0 1px 0 #ddd;
-			display: none; }
+    display: block;
+    width: 218px;
+    height: 138px;
+    font: 10px "Lucida Grande";
+    color: #000; }
+  
+    #uptime {
+      position: absolute;
+      top: 16px;
+      left: 19px;
+      color: #808080;
+      text-shadow: 0 1px 0 #ddd;
+      display: none; }
 
-		#tabs {
-			position: absolute;
-			top: 12px;
-			left: 78px;
-			width: 60px;
-			height: 18px;
-			padding: 1px;
-			font-weight: bold;
-			background-image: url(Images/tab_l.png);
-			-apple-dashboard-region: dashboard-region(control rectangle); } /* prevents dragging */
-			#cpu,
-			#ram {
-				float: left;
-				width: 30px;
-				height: 15px;
-				padding-top: 3px;
-				text-align: center;
-				font-family: "Helvetica Neue", Helvetica }
-				#cpu {
-					width: 29px;
-					padding-left: 1px; }
-			.tabActive {
-				color: #fff;
-				text-shadow: 0 -1px 0 rgba(0,0,0,0.5); }
-			.tabInactive {
-				color: #808080;
-				text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
-		
-		#processList {
-			text-align: left; }
-		#dataList {
-			width: 181px;
-			text-align: right; }
-			.list {
-				position: absolute;
-				top: 37px;
-				padding: 0 19px;
-				line-height: 16px;
-				text-shadow: 0 1px 0 #ddd; }
+    #tabs {
+      position: absolute;
+      top: 12px;
+      left: 78px;
+      width: 60px;
+      height: 18px;
+      padding: 1px;
+      font-weight: bold;
+      background-image: url(Images/tab_l.png);
+      -apple-dashboard-region: dashboard-region(control rectangle); } /* prevents dragging */
+      #cpu,
+      #ram {
+        float: left;
+        width: 30px;
+        height: 15px;
+        padding-top: 3px;
+        text-align: center;
+        font-family: "Helvetica Neue", Helvetica }
+        #cpu {
+          width: 29px;
+          padding-left: 1px; }
+      .tabActive {
+        color: #fff;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.5); }
+      .tabInactive {
+        color: #808080;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
+    
+    #processList {
+      text-align: left; }
+    #dataList {
+      width: 181px;
+      text-align: right; }
+      .list {
+        position: absolute;
+        top: 37px;
+        padding: 0 19px;
+        line-height: 16px;
+        text-shadow: 0 1px 0 #ddd; }
 
-		#infoButton {
-			position: absolute;
-			top: 16px;
-			right: 32px; }
+    #infoButton {
+      position: absolute;
+      top: 16px;
+      right: 32px; }
 
-	#back {
-		display: none;
-		font: 11px "Helvetica Neue", Helvetica;
-		font-weight: bold;
-		color: #fff;
-		text-shadow: 0 1px 0 #000; }
-		
-		#optionSpeed {
-			position: absolute;
-			top: 15px;
-			left: 23px; }
-		#optionUptime {
-			position: absolute;
-			top: 44px;
-			left: 101px; }
-		
-		#license {
-			position: absolute;
-			bottom: 42px;
-			left: 23px;
-			width: 54px;
-			height: 18px;
-			color: #666;
-			text-decoration: underline;
-			text-shadow: 0 -1px 0 #000;
-			-webkit-transition-property: color;
-  			-webkit-transition-duration: 0.2s; }
-			#license:hover {
-				color: #999;
-				cursor: pointer; }
-		#version {
-			position: absolute;
-			bottom: 27px;
-			left: 23px;
-			font-size: 12px;
-			color: #808080;
-			text-shadow: 0 -1px 0 #000; }
+  #back {
+    display: none;
+    font: 11px "Helvetica Neue", Helvetica;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 1px 0 #000; }
+    
+    #optionSpeed {
+      position: absolute;
+      top: 15px;
+      left: 23px; }
+    #optionUptime {
+      position: absolute;
+      top: 44px;
+      left: 101px; }
+    
+    #license {
+      position: absolute;
+      bottom: 23px;
+      left: 23px;
+      width: 54px;
+      height: 18px;
+      color: #666;
+      text-decoration: underline;
+      text-shadow: 0 -1px 0 #000;
+      -webkit-transition-property: color;
+      -webkit-transition-duration: 0.2s; }
+      #license:hover {
+        color: #999;
+        cursor: pointer; }
  
-		#doneButton {
-			position: absolute;
-			bottom: 23px;
-			right: 20px; }
+    #doneButton {
+      position: absolute;
+      bottom: 23px;
+      right: 20px; }
