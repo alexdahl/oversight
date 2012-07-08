@@ -4,7 +4,7 @@ Oversight is a Mac dashboard widget that lets you keep an eye on applications. I
 
 ## Installation
 
-Open `Oversight.wdgt` from the Finder to install. OS X will move the file to `~/Library/` and open the widget in Dashboard.
+Download the latest stable release from the [tags page](https://github.com/alexdahl/oversight/tags). Then just open `Oversight.wdgt` from the Finder to install. OS X will move the file to `~/Library/` and open the widget in Dashboard.
 
 ## Collaboration
 
