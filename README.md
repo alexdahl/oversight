@@ -1,10 +1,14 @@
 # Oversight
 
-Oversight is a Mac dashboard widget that lets you keep an eye on applications. It displays the top five consumers of processor or memory, along with system uptime at a glance.
+Oversight is a Mac dashboard widget that lets you keep an eye on applications. It displays the top five consumers of processor time or memory space, along with system uptime at a glance.
 
 ## Installation
 
 Download the latest stable release from the [tags page](https://github.com/alexdahl/oversight/tags). Then just open `Oversight.wdgt` from the Finder to install. OS X will move the file to `~/Library/` and open the widget in Dashboard.
+
+## Multi-core Reporting
+
+The CPU value shown is the percentage of CPU time a process is using of its core. A process reporting 100% usage has maxed out only its core, not the entire processor. (For example, a quad-core system supports a theoretical maximum of 400% CPU time – 4 processes each using 100% of their cores.)
 
 ## Collaboration
 
