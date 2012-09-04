@@ -16,4 +16,4 @@ When maintaining a separate fork, it's best to change the bundle identifier to a
 
 ## License
 
-Oversight is release under the [MIT License](http://www.opensource.org/licenses/MIT), which allows you to modify and redistribute this software freely.
+Oversight is released under the [MIT License](http://www.opensource.org/licenses/MIT), which allows you to modify and redistribute this software freely.
