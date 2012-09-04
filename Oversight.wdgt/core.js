@@ -146,7 +146,7 @@ function doPs(result){ // generates and outputs process list
 		for(var x = 0; x < 5; x++){
 			var breakIndex = lines[x].indexOf(" ",2)
 			nameString += lines[x].substring(breakIndex) + "<br />";
-			dataString += lines[x].substring(1,breakIndex) + "%<br />";
+			dataString += lines[x].substring(0,breakIndex) + "%<br />";
 		}
 	}else{ // RAM
 		for(var x = 0; x < 5; x++){

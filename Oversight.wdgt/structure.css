@@ -89,20 +89,20 @@ body {
 			    background-color: white;
 			    opacity: 0.15; }
     
-    #processList {
-      text-align: left;
-      width: 130px;
-      overflow: hidden;
-      -webkit-mask-box-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 100%); }
-    #dataList {
-      width: 181px;
-      text-align: right; }
-      .list {
-        position: absolute;
-        top: 31px;
-        padding: 0 9px;
-        line-height: 16px;
-        text-shadow: 0 1px 0 #ddd; }
+    .list {
+      position: absolute;
+      top: 31px;
+      padding: 0 9px;
+      line-height: 16px;
+      text-shadow: 0 1px 0 #ddd; }
+      #processList {
+	      text-align: left;
+	      width: 130px;
+	      overflow: hidden;
+	      -webkit-mask-box-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 100%); }
+	    #dataList {
+	      width: 181px;
+	      text-align: right; }
 
     #infoButton {
       position: absolute;
