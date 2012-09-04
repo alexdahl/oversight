@@ -76,8 +76,24 @@ body {
         border-top: 1px solid hsl(0, 0%, 90%);
         border-bottom: 1px solid hsl(0, 0%, 60%); }
     
+    #zebra {
+    	position: absolute;
+    	top: 31px;
+	    width: 198px;
+	    margin: 0;
+	    padding: 0;
+	    list-style-type: none; }
+	    #zebra li {
+		    height: 16px; }
+		    #zebra li:nth-child(even) {
+			    background-color: white;
+			    opacity: 0.15; }
+    
     #processList {
-      text-align: left; }
+      text-align: left;
+      width: 130px;
+      overflow: hidden;
+      -webkit-mask-box-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 100%); }
     #dataList {
       width: 181px;
       text-align: right; }
