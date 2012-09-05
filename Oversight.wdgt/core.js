@@ -146,7 +146,7 @@ function doPs(result){ // generates and outputs process list
 		for(var x = 0; x < 5; x++){
 			var breakIndex = lines[x].indexOf(" ",2)
 			nameString += lines[x].substring(breakIndex) + "<br />";
-			dataString += lines[x].substring(1,breakIndex) + "%<br />";
+			dataString += lines[x].substring(0,breakIndex) + "%<br />";
 		}
 	}else{ // RAM
 		for(var x = 0; x < 5; x++){
@@ -200,13 +200,11 @@ function switchTab(tab){ // called when the user presses a tab
 	if(tab == 0){ // switch to CPU
 		document.getElementById('ram').className = "tabInactive";
 		document.getElementById('cpu').className = "tabActive";
-		document.getElementById('tabs').style.backgroundImage = "url(Images/tab_l.png)";
 		psCommand = "/bin/ps -racwwxo \"%cpu comm\" | head -6 | tail -5";
 		widget.setPreferenceForKey(false, "tab");
 	}else{ // switch to RAM
 		document.getElementById('cpu').className = "tabInactive";
 		document.getElementById('ram').className = "tabActive";
-		document.getElementById('tabs').style.backgroundImage = "url(Images/tab_r.png)";
 		psCommand = "/bin/ps -macwwxo \"rss comm\" | head -6 | tail -5";
 		widget.setPreferenceForKey(true, "tab");
 	}

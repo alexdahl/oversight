@@ -18,8 +18,6 @@
 	<integer>10</integer>
 	<key>CloseBoxInsetY</key>
 	<integer>8</integer>
-	<key>CFBundleIconFile</key>
-	<string>Oversight.icns</string>
 	<key>MainHTML</key>
 	<string>Oversight.html</string>
 	<key>LSMinimumSystemVersion</key>

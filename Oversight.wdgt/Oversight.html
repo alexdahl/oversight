@@ -21,19 +21,24 @@ http://www.opensource.org/licenses/MIT
 <body onload="setup();">
 
 	<div id="front">
-		<img src="Default.png" alt="" />
 		<div id="uptime">&nbsp;</div>
 		<div id="tabs">
 			<div id="cpu" class="tabActive" onclick="switchTab(0)">CPU</div>
 			<div id="ram" class="tabInactive" onclick="switchTab(1)">RAM</div>
 		</div>
+		<ul id="zebra">
+			<li>&nbsp;</li>
+			<li>&nbsp;</li>
+			<li>&nbsp;</li>
+			<li>&nbsp;</li>
+			<li>&nbsp;</li>
+		</ul>
 		<div id="processList" class="list">&nbsp;</div>
 		<div id="dataList" class="list">&nbsp;</div>
 		<div id='infoButton'></div>
 	</div>
 	
 	<div id="back">
-		<img src="Images/Back.png" alt="" />
 		<div id="optionSpeed">
 			Update speed:
 			<select id="speedSelect">
