@@ -1,6 +1,6 @@
 //// global variables:
 
-var version = "1.0"; // widget version number
+var version = "1.1"; // widget version number
 var gDoneButton;
 var gInfoButton;
 var refreshSpeed = 2000;

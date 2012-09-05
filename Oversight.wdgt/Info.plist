@@ -11,9 +11,9 @@
 	<key>CFBundleDisplayName</key>
 	<string>Oversight</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.1</string>
+	<string>1.1</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.1</string>
+	<string>1.1</string>
 	<key>CloseBoxInsetX</key>
 	<integer>10</integer>
 	<key>CloseBoxInsetY</key>
@@ -21,6 +21,6 @@
 	<key>MainHTML</key>
 	<string>Oversight.html</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.4.11</string>
+	<string>10.8</string>
 </dict>
 </plist>
