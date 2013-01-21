@@ -145,13 +145,13 @@ function doPs(result){ // generates and outputs process list
 	if(activeTab == 0){ // CPU
 		for(var x = 0; x < 5; x++){
 			var breakIndex = lines[x].indexOf(" ",2)
-			nameString += lines[x].substring(breakIndex) + "<br />";
+			nameString += lines[x].substr(breakIndex,26) + "<br />";
 			dataString += lines[x].substring(0,breakIndex) + "%<br />";
 		}
 	}else{ // RAM
 		for(var x = 0; x < 5; x++){
 			var breakIndex = lines[x].indexOf(" ",2)
-			nameString += lines[x].substring(breakIndex) + "<br />";
+			nameString += lines[x].substr(breakIndex,26) + "<br />";
 			dataString += parseRAM(lines[x].substring(0,breakIndex)) + "<br />";
 		}
 	}
